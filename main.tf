@@ -4,10 +4,10 @@ provider "aws" {
 
 resource "aws_instance" "one" {
   count                  = 4
-  ami                    = "ami-0360c520857e3138f"
+  ami                    = "ami-07b7f66b629de9364"
   instance_type          = "t2.medium"
-  key_name               = "vkeypair"
-  vpc_security_group_ids = ["sg-00f3f3e5bc8d7a27a"]
+  key_name               = "jenkins"
+  vpc_security_group_ids = ["sg-00c549897f85df846"]
   tags = {
     Name = var.instance_names[count.index]
   }
