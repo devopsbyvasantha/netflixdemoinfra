@@ -2,8 +2,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "two" {
-  count                  = 4
+resource "aws_instance" "one" {
+  count                  = 2
   ami                    = "ami-061fe7df6ad657197"
   instance_type          = "t2.medium"
   key_name               = "jenkins"
