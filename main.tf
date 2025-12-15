@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "one" {
-  count                  = 4
+  count                  = 2
   ami                    = "ami-061fe7df6ad657197"
   instance_type          = "t2.medium"
   key_name               = "jenkins"
